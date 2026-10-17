@@ -50,7 +50,7 @@ async def settings_mar(client, message: Message, _):
 async def gib_repo_callback(_, callback_query):
     await callback_query.edit_message_media(
         media=InputMediaVideo(
-            "https://telegra.ph/file/b1367262cdfbcd0b2af07.mp4",
+            "https://n.uguu.se/ExJAPPDU.mp4",
             has_spoiler=True,
             caption=(
                 "🎵 Myanmar Music Source Code🎵\n"
