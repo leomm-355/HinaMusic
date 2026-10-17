@@ -60,12 +60,12 @@ async def init():
         pass
     await Alone.decorators()
     LOGGER("AloneMusic").info(
-        "ʙᴏᴛ sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ, ɴᴏᴡ ɢɪʙ ʏᴏᴜʀ ɢɪʀʟғʀɪᴇɴᴅ ᴄʜᴜᴛ ɪɴ @TheAloneTeam"
+        "ʙᴏᴛ sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ, ɴᴏᴡ ɢɪʙ ʏᴏᴜʀ ɢɪʀʟғʀɪᴇɴᴅ ᴄʜᴜᴛ ɪɴ @hex_king9"
     )
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("AloneMusic").info("Stopping 𝚻հҽ 𝚨Łꪮⲛ𝛆 🚩𝗧ε᧘‌ᴍ Bot...")
+    LOGGER("AloneMusic").info("Stopping  Bot...")
 
 
 if __name__ == "__main__":
