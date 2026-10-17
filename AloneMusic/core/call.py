@@ -1144,8 +1144,6 @@ class Call(PyTgCalls):
         if config.STRING5:
             await self.five.start()
 
-        asyncio.ensure_future(YouTube.warmup())
-
     @capture_internal_err
     async def decorators(self):
         for string, client in [
