@@ -53,23 +53,22 @@ async def gib_repo_callback(_, callback_query):
             "https://telegra.ph/file/b1367262cdfbcd0b2af07.mp4",
             has_spoiler=True,
             caption=(
-                "🎵 AloneMusic Source Code🎵\n"
+                "🎵 Myanmar Music Source Code🎵\n"
                 "✨ Fast • Powerful • Smooth Music Bot\n"
                 "➠ Play songs from YouTube instantly\n"
                 "➠ High-quality audio & video streaming\n"
                 "➠ Queue system with controls\n"
-                "➠ 24/7 non-stop music in VC\n"
-                "🚀 Fork the repo and deploy your own bot now!"
+                "➠ 24/7 non-stop music in VC"
             ),
         ),
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="⌯ ғᴏʀᴋ ʀᴇᴘᴏ ⌯",
-                        url="https://t.me/hot_dpz_stor"
+                        text="⌯ ʀᴇᴘᴏ ⌯",
+                        url=config.OWNER_LINK
                     ),
-                    InlineKeyboardButton(text="⌯ 💌 ʏᴛ-ʌᴘɪ ⌯", callback_data="bot_info_data"),
+                    InlineKeyboardButton(text="⌯  ʏᴛ-ʌᴘɪ ⌯", callback_data="bot_info_data"),
                 ],
                 [
                     InlineKeyboardButton(
@@ -109,7 +108,7 @@ async def show_bot_info(c: app, q: CallbackQuery):
     x = await c.send_message(q.message.chat.id, "ᴘɪɴɢ ᴘᴏɴɢ 💕..")
     delta_ping = time() - start
     await x.delete()
-    txt = f"""💌 ᴘɪɴɢ ᴘᴏɴɢ ʙᴀʙʏ...
+    txt = f"""ᴘɪɴɢ ᴘᴏɴɢ ʙᴀʙʏ...
 
 • ᴅᴀᴛᴀʙᴀsᴇ: ᴏɴʟɪɴᴇ
 • ʏᴏᴜᴛᴜʙᴇ ᴀᴘɪ: ʀᴇsᴘᴏɴsɪᴠᴇ
@@ -128,7 +127,7 @@ async def show_bot_info(c: app, q: CallbackQuery):
 async def support(client, CallbackQuery, _):
     await CallbackQuery.edit_message_text(
         text=(
-            "🎵 Welcome to AloneMusic 🎵\n"
+            "🎵 Welcome to Myanmar Music 🎵\n"
             "✨ Fast • Powerful • Smooth Music Experience\n"
             "➠ Play songs from YouTube instantly\n"
             "➠ High-quality audio & video streaming\n"
@@ -142,7 +141,7 @@ async def support(client, CallbackQuery, _):
                 [
                     InlineKeyboardButton(
                         text="⌯ ᴅᴇᴠ ⌯", 
-                        user_id=config.OWNER_ID
+                        url=config.OWNER_LINK
                     )
                 ],
                 [
