@@ -15,13 +15,13 @@ from os import getenv
 import random
 
 RANDOM_THUMBS = [
-    "https://files.catbox.moe/vf873g.jpg",
-    "https://files.catbox.moe/t1l756.jpg",
-    "https://files.catbox.moe/003fyq.jpg",
-    "https://files.catbox.moe/vf873g.jpg",
-    "https://files.catbox.moe/t1l756.jpg",
-    "https://files.catbox.moe/vf873g.jpg",
-    "https://files.catbox.moe/ej7cuk.jpg",
+    "https://files.catbox.moe/onc6xg.jpg",
+    "https://files.catbox.moe/onc6xg.jpg",
+    "https://files.catbox.moe/onc6xg.jpg",
+    "https://files.catbox.moe/onc6xg.jpg",
+    "https://files.catbox.moe/onc6xg.jpg",
+    "https://files.catbox.moe/onc6xg.jpg",
+    "https://files.catbox.moe/onc6xg.jpg",
 ]
 
 def get_thumb():
@@ -42,8 +42,8 @@ SPOTIFY_ARTIST_IMG_URL = get_thumb()
 SPOTIFY_ALBUM_IMG_URL = get_thumb()
 SPOTIFY_PLAYLIST_IMG_URL = get_thumb()
 
-ARC_API_URL = getenv("ARC_API_URL", "https://api.arcmusic.fun")
-ARC_API_KEY = getenv("ARC_API_KEY", "ARC708054d55c95189b757f86")
+#ARC_API_URL = getenv("ARC_API_URL", "https://api.arcmusic.fun")
+#ARC_API_KEY = getenv("ARC_API_KEY", "ARC708054d55c95189b757f86")
 
 # Get this value from my.telegram.org/apps
 API_ID = int(getenv("API_ID", 0))
@@ -65,7 +65,7 @@ LOGGER_ID = int(getenv("LOGGER_ID", 0))
 
 DEBUG_IGNORE_LOG = True
 # Get this value from  on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 8106551502))
+OWNER_ID = int(getenv("OWNER_ID", ""))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -75,7 +75,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Yewsdhi/QUEENAMUSICAOTUPLAY",
+    "https://github.com/leomm-355/HinaMusic",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
@@ -83,8 +83,9 @@ GIT_TOKEN = getenv(
 )  # Fill this variable if your upstream repository is private
 
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ll_DPZ_WORLDS_lll")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/about_Maahi_XD")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "")
+OWNER_LINK = getenv("OWNER_LINK","https://t.me/cores_999")
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", True))
 
@@ -122,22 +123,22 @@ confirmer = {}
 """
 START_IMG_URL = getenv(
     "START_IMG_URL",
-    "https://files.catbox.moe/abplbz.jpg",
+    "https://files.catbox.moe/onc6xg.jpg",
 )
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://files.catbox.moe/3picc9.jpg",
+    "https://files.catbox.moe/onc6xg.jpg",
 )
-PLAYLIST_IMG_URL = "https://files.catbox.moe/34xlvu.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/34xlvu.jpg"
-TELEGRAM_AUDIO_URL = "https://files.catbox.moe/34xlvu.jpg"
-TELEGRAM_VIDEO_URL = "https://files.catbox.moe/34xlvu.jpg"
-STREAM_IMG_URL = "https://files.catbox.moe/34xlvu.jpg"
-SOUNCLOUD_IMG_URL = "https://files.catbox.moe/34xlvu.jpg"
-YOUTUBE_IMG_URL = "https://files.catbox.moe/34xlvu.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/34xlvu.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/34xlvu.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/34xlvu.jpg"
+PLAYLIST_IMG_URL = "https://files.catbox.moe/onc6xg.jpg"
+STATS_IMG_URL = "https://files.catbox.moe/onc6xg.jpg"
+TELEGRAM_AUDIO_URL = "https://files.catbox.moe/onc6xg.jpg"
+TELEGRAM_VIDEO_URL = "https://files.catbox.moe/onc6xg.jpg"
+STREAM_IMG_URL = "https://files.catbox.moe/onc6xg.jpg"
+SOUNCLOUD_IMG_URL = "https://files.catbox.moe/onc6xg.jpg"
+YOUTUBE_IMG_URL = "https://files.catbox.moe/onc6xg.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/onc6xg.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/onc6xg.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/onc6xg.jpg"
 """
 
 def time_to_seconds(time):
