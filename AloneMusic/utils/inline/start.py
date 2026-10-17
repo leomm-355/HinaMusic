@@ -53,12 +53,12 @@ def private_panel(_):
                 callback_data="gib_source"
             ),
         ],
-        [
-            InlineKeyboardButton(
-                text="⌯ ʙᴏᴛꜱ ꜱᴛᴀᴛꜱ ⌯",
-                url="https://t.me/ll_ROYAL_ABOUT_ll"
-            ),
-        ],
+        #[
+          #  InlineKeyboardButton(
+             #   text="⌯ ʙᴏᴛꜱ ꜱᴛᴀᴛꜱ ⌯",
+              #  url="https://t.me/ll_ROYAL_ABOUT_ll"
+           # ),
+       # ],
     ]
 
     return buttons
